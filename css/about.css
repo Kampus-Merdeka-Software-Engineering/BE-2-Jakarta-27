@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.km {
+  height: 70px;
+  width: 90px;
+}
+.REVOU {
+  height: 60px;
+  width: 80px;
+  margin: 10px;
+}
+.logo1 {
+  color: black;
+  font-weight: 800;
+}
+.logo2 {
+  color: crimson;
+  font-weight: 800;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.container {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid rgb(130, 59, 59) 3px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  margin-right: 20px;
+}
+nav ul li {
+  list-style: none;
+  margin: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* akhir navigasi */
+
+/* paragaraf 1 */
+.container2 {
+  width: 50%;
+  margin: 0 auto; /* Mengatur jarak kiri dan kanan agar container menjadi tengah secara horizontal */
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: justify; /* Mengatur rata kanan dan kiri untuk teks dalam container */
+}
+.container2 h1 {
+  margin: 20px;
+}
+.container2 h1 span {
+  color: crimson;
+}
+
+.container2 h1,
+.container2 p {
+  text-align: center; /* Mengatur teks h1 dan p menjadi di tengah */
+}
+/* akhir paragaraf 1 */
+
+/* Konten Card */
+@import url("https://fonts.googleapis.com/css2?family=Baloo 2&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", cursive;
+}
+
+.containercard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5rem 10rem;
+}
+
+.badge {
+  text-transform: uppercase;
+  color: deeppink;
+  letter-spacing: 1px;
+  font-size: 11px;
+  text-align: justify;
+}
+
+.heading {
+  font-size: 40px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.card_group {
+  display:flex;
+  align-items:center;
+  
+  justify-content:space-around;
+  flex-wrap:wrap-reverse;
+}
+
+.card {
+  width: 280px;
+  height: 400px;
+  background-color: rgba(251, 220, 96, 0.545);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.image-container {
+  width: 100%;
+  height: 290px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
+  padding: 20px 16px;
+}
+
+.profile-name {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+.job-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #080808;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.imgauto{
+width:100%;
+height: auto;
+}
+
+
+/* Footer Properties */
+
+.footer {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #DDDDDD;
+  color: #000;
+  padding: 30px 0;
+}
+
+.footercontainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.footer-content {
+text-align: left;
+width: 50%;
+}
+
+.social-icons {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: solid 2px black;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.footer-bottom p, .footer-social {
+  margin-top: 20px;
+}

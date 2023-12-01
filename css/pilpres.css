@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+
+.body{
+  background-size: cover;
+}
+                                   
+/* Main setting*/
+html {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+#h3 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #323232;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+
+/* ........STARTBODY............ */
+
+/* start judul */
+.container2 {
+  width: 70%;
+  margin: 0 auto; /* Mengatur jarak kiri dan kanan agar container menjadi tengah secara horizontal */
+  margin-top: 100px;
+  margin-bottom: 0 auto;
+  text-align: justify; /* Mengatur rata kanan dan kiri untuk teks dalam container */
+}
+.container2 h1 {
+  margin: 20px;
+}
+.container2 h1 span {
+  color: crimson;
+}
+
+.container2 h1,
+.container2 p {
+  text-align: center; /* Mengatur teks h1 dan p menjadi di tengah */
+}
+/* end judul */
+
+/* Start animation Profil */
+.{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.foto{
+  width: 100%;
+}
+
+.foto-container{
+  align-items: center;
+  display: flex;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+.foto-item{
+  height: 200px;
+  opacity:0;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 330px;
+  z-index: 0;
+  border-radius: 15px;
+  background-size: contain;
+}
+
+.foto-item-1{
+  left: 15%;
+  opacity: .4;
+  transform: translateX(-50%);
+}
+
+.foto-item-2, .foto-item-4{
+  height: 250px;
+  opacity: 0.8;
+  width: 380px;
+  z-index: 1;  
+}
+
+.foto-item-2{
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.foto-item-3{
+  box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
+  height: 350px;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 430px;
+  z-index: 2;
+}
+
+.foto-item-4{
+  left: 70%;
+  transform: translateX(-50%);
+}
+
+.foto-item-5{
+  left: 85%;
+  opacity: .4;
+  transform: translateX(-50%);
+}
+.foto-controls{
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+  height: 100px;
+}
+.foto-controls button{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0 50Px;
+  padding: 0 12px;
+  text-transform: capitalize;
+}
+
+.foto-controls-button:focus{
+  outline: none;
+}
+
+.foto-controls-previous{
+  position: relative;
+}
+
+.foto-controls-previous::before{
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: '';
+  display: inline-block;
+  height: 5px;
+  left: -30px;
+  padding: 10px;
+  position: absolute;
+  top: 25%;
+  transform: rotate(135deg) translateY(-50%);
+  transition: left 0.15s ease-in-out;
+  width: 5px;
+}
+
+.foto-controls-previous:hover::before{
+  left: -70px;
+}
+
+.foto-controls-next{
+  position: relative;
+}
+
+.foto-controls-next::after{
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: '';
+  display: inline-block;
+  height: 5px;
+  right: -30px;
+  padding: 10px;
+  position: absolute;
+  top: 25%;
+  transform: rotate(-45deg) translateY(50%);
+  transition: right 0.15s ease-in-out;
+  width: 5px;
+}
+
+.foto-controls-next:hover::after{
+  right: -70px;
+}
+
+.foto-nav{
+  bottom: -15px;
+  display:flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 100%
+}
+
+.foto nav li{
+  background:#ccc;
+  border-radius: 50%;
+  height: 10px;
+  margin: 0 16px;
+  width: 10px;
+}
+
+.foto-nav li.foto-item-selected{
+  background: #555;
+}
+/* end animation profil */
+
+
+/* Start Resume */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+  max-width: 90%;
+  margin: auto;
+}
+
+.accordion{
+  background-color: white;
+  color: red;
+  cursor: pointer;
+  font-size: 1.4rem;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.accordion i {
+  font-size: 1rem;
+  color: #000;
+}
+
+.active, 
+.accordion:hover{
+  background-color: #fff;
+}
+
+.panel{
+  padding: 1rem 2rem 2.5rem 2rem;
+  text-align: justify;
+  background-color: white;
+  overflow: hidden;
+  background-color: #DDDDDD;
+  display: none;
+}
+
+.panel p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.faq{
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 25px;
+  margin: 20px 0;
+}
+
+.faq.active{
+  border: none;
+}
+/* End Resume */
+
+
+/* ........ENDBODY............ */
+
+/* STARTFOOTER */
+.footer {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #DDDDDD;
+  color: #000;
+  padding: 30px 0;
+}
+
+.footercontainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.footer-content {
+text-align: left;
+width: 50%;
+}
+
+.social-icons {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: solid 2px black;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.footer-bottom p, .footer-social {
+  margin-top: 20px;
+}
+
+/* Responsive Properties */
+@media (max-width:800px) {
+  /* Responsive Navbar */
+  .nav  .nav-btn {
+    display: inline-block;
+    position: center;
+    right: 0px;
+    top: 0px;
+  }
+  .nav  .nav-btn  label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    height: 50px;
+    padding: 15px;
+    border: double;
+  }
+  .nav  .nav-btn  label:hover,.nav  #nav-check:checked ~ .nav-btn  label {
+    background-color: rgba(226, 61, 42, 0.3);
+    cursor: pointer;
+  }
+  .nav  .nav-btn  label  span {
+    display: block;
+    width: 20px;
+    height: 5px;
+    background-color: #E23D2A;
+    border-radius: 5px;
+  }
+  .nav  .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 70px;
+    left: 0px;
+  }
+
+  .nav  .nav-links  a {
+    display: block;
+    width: 100%;
+    border-bottom: solid #DDDDDD 1px;
+    font-size: 75%;
+  }
+
+  .nav  .nav-links  img{
+    padding: 10px 0 0 0;
+  }
+  .nav  #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav  #nav-check:checked ~ .nav-links {
+    height: auto;
+    overflow-y:hidden;
+    border-bottom: solid #DDDDDD 3px;
+  }
+
+  /* Footer Responsive */
+  .footer-content {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 20px;
+  }
+
+  .footer-bottom p, .footer-content p{
+    font-size: 75%;
+}
+}
+
+/* ENDFOOTER */

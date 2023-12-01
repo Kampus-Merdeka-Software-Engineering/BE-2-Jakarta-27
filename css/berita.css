@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+                                   
+/* Main setting*/
+html {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+h1 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #323232;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #E23D2A;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+.grid-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 140px auto 0 auto;
+}
+
+.site-content {display: flex;}
+
+/* konten berita */
+
+.news {
+  width: 75%;
+  text-align: left;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {display: inline-block;}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.3;
+}
+
+main {padding: 20px 0;}
+
+article {margin-bottom: 20px;}
+
+.article-title, .article-image, .article-content p {margin-bottom: 10px;}
+
+.article-image img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.article-date, .caption {
+  font-style: italic;
+  margin-bottom: 10px;
+  opacity: 0.3;
+  font-size: 0.8rem;
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------*/
+
+/* widget di kiri */
+.widget {width: 35%;}
+
+aside {
+  padding: 40px;
+  text-align: left;
+}
+
+.cardcover {
+  display: flex;
+  border-bottom:solid 0.7px rgba(226, 61, 42, 0.5);
+  padding: 16px 0 16px 0;
+}
+
+a.cardcover {text-decoration: none;}
+
+.card {
+  background-image: url("../img/image-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 70%;
+  border-radius: 8px;
+}
+
+.card-content {padding: 2px;}
+
+.card-content p {
+  margin: 4px;
+  line-height: 1.4;
+  color: #323232;
+}
+
+/* responsive -----------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width:900px) {
+  .news {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  .site-content {display: block;}
+
+  .widget {width: 100%;}
+
+  .card{
+    width: 6em;
+    height: 3.75em;
+  }
+
+  .cardcover{align-items: center;}
+}

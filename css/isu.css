@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+                                   
+/* Main setting*/
+html {
+  display: block;
+  align-items: center;
+  text-align: center;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+#h3 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #323232;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+/* NavBar Properties */
+.navcontainer{
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+}
+
+.nav {
+    width: 100%;
+    padding: 10px 50px 10px 50px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #fff;
+    position:absolute;
+    border-bottom: solid #DDDDDD 3px;
+}
+
+.nav  .nav-header {
+    display: inline-flex;
+}
+
+
+.nav  .nav-btn {
+    display: none;
+}
+
+.nav  .nav-links {
+    width: 50%;
+    display: inline-flex;
+    justify-content:space-between;
+    align-items:center;
+    /* font-size: 20px; */
+}
+
+.nav  .nav-links  a {
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav  .nav-links  a:hover {
+    color: #E23D2A;
+}
+
+.nav  #nav-check {
+    display: none;
+}
+
+.nav-links a :blank {
+  padding: 25px 20px;
+  display: inline-block;
+}
+
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* paragaraf 1 */
+.container2 {
+  width: 49%;
+  margin: 0 auto; /* Mengatur jarak kiri dan kanan agar container menjadi tengah secara horizontal */
+  margin-top: 140px;
+  margin-bottom: 130px;
+  text-align: justify; /* Mengatur rata kanan dan kiri untuk teks dalam container */
+}
+.container2 h1 {
+  margin: 20px;
+}
+.container2 h1 span {
+  color: crimson;
+}
+
+.container2 h1,
+.container2 p {
+  text-align: center; /* Mengatur teks h1 dan p menjadi di tengah */
+}
+/* akhir paragaraf 1 */
+
+/* berita */
+.container3 {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+.subcontainer3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px 20px 50px;
+}
+.container3 h1 {
+  font-size: 2ch;
+}
+.container3 span {
+  color: crimson;
+}
+
+.subcontainer3 a {
+  text-decoration: none;
+  color: crimson;
+}
+
+.continerberita {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.berita {
+  margin-left: 15px;
+  height: auto;
+  width: 250px;
+}
+.card {
+  height: 180px;
+  width: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card img {
+  max-height: 90%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.konten {
+  text-align: left;
+  height: 100px;
+  overflow: hidden;
+}
+.konten h1 {
+  font-size: 1.5ch;
+  width: 250px;
+  height: auto;
+  overflow: hidden;
+  height: 50px;
+  color: crimson;
+  text-decoration: none;
+}
+.konten a {
+  text-decoration: none;
+}
+.konten p {
+  font-size: 1.1ch;
+  width: 250px;
+  height: 50px;
+  overflow: hidden;
+  color: black;
+}
+
+
+/* Footer Properties */
+
+.footer {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #DDDDDD;
+  color: #000;
+  padding: 30px 0;
+}
+
+.footercontainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.footer-content {
+text-align: left;
+width: 50%;
+}
+
+.social-icons {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: solid 2px black;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.footer-bottom p, .footer-social {
+  margin-top: 20px;
+}
+
+
+/* -----------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Responsive Properties */
+@media (max-width:800px) {
+  /* Responsive Navbar */
+  .nav  .nav-btn {
+    display: inline-block;
+    position: center;
+    right: 0px;
+    top: 0px;
+  }
+  .nav  .nav-btn  label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    height: 50px;
+    padding: 15px;
+    border: double;
+  }
+  .nav  .nav-btn  label:hover,.nav  #nav-check:checked ~ .nav-btn  label {
+    background-color: rgba(226, 61, 42, 0.3);
+    cursor: pointer;
+  }
+  .nav  .nav-btn  label  span {
+    display: block;
+    width: 20px;
+    height: 5px;
+    background-color: #E23D2A;
+    border-radius: 5px;
+  }
+  .nav  .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 70px;
+    left: 0px;
+  }
+
+  .nav  .nav-links  a {
+    display: block;
+    width: 100%;
+    border-bottom: solid #DDDDDD 1px;
+    font-size: 75%;
+  }
+
+  .nav  .nav-links  img{
+    padding: 10px 0 0 0;
+  }
+  .nav  #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav  #nav-check:checked ~ .nav-links {
+    height: auto;
+    overflow-y:hidden;
+    border-bottom: solid #DDDDDD 3px;
+  }
+
+  /* Footer Responsive */
+  .footer-content {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 20px;
+  }
+
+  .footer-bottom p, .footer-content p{
+    font-size: 75%;
+}
+}
+
