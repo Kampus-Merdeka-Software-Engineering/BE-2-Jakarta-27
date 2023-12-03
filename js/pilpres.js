@@ -1,59 +1,28 @@
-const fotoContainer = document.querySelector('.foto-container');
-const fotoControlsContainer = document.querySelector('.foto-controls');
-const fotoControls = ['previous', 'next'];
-const fotoItems = document.querySelectorAll('.foto-item');
+const swiperContainers = document.querySelectorAll('.swiper-container');
 
-class Carousel {
+      swiperContainers.forEach((container, index) => {
+        const accordionContainer = document.getElementById(`accordion-container-${index + 1}`);
+        const descriptionElements = accordionContainer.querySelectorAll('.slide-description');
+        const accordionContent = accordionContainer.querySelector('.accordion-content');
 
-    constructor(container, items, controls){
-        this.carouselContainer = container;
-        this.carouselControls = controls;
-        this.carouselArray = [...items];
-    }
+        const swiper = new Swiper(container, {
+          effect: 'cards',
+          pagination: {
+            el: container.querySelector('.swiper-pagination'),
+            clickable: true,
+          },
+          spaceBetween: 20,
+          loop: true, 
+          on: {
+            slideChange: function () {
+              const activeSlideIndex = this.realIndex;
 
-    updateFoto(){
-        this.carouselArray.forEach(el => {
-            el.classList.remove('foto-item-1');
-            el.classList.remove('foto-item-2');
-            el.classList.remove('foto-item-3');
-            el.classList.remove('foto-item-4');
-            el.classList.remove('foto-item-5');
+              descriptionElements.forEach(element => {
+                element.classList.remove('active');
+              });
+
+              accordionContent.querySelector(`[data-slide-index="${activeSlideIndex}"]`).classList.add('active');
+            },
+          },
         });
-    
-
-        this.carouselArray.slice(0, 5).forEach((el, i) => {
-            el.classList.add(`foto-item-${i+1}`);
-        });
-    }
-
-    setCurrentState(direction){
-        if (direction.className == 'foto-controls-previous'){
-            this.carouselArray.unshift(this.carouselArray.pop());
-        }else{
-            this.carouselArray.push(this.carouselArray.shift());
-        }
-        this.updateFoto();
-    }
-
-    setControls(){
-        this.carouselControls.forEach(control => {
-            fotoControlsContainer.appendChild(document.createElement('button')).className = `foto-controls-${control}`;
-            document.querySelector(`.foto-controls-${control}`).innerText = control;
-        });
-    }
-
-    useControls(){
-        const triggers = [...fotoControlsContainer.childNodes];
-        triggers.forEach(control => {
-            control.addEventListener('click', e => {
-                e.preventDefault();
-                this.setCurrentState(control);
-            });
-        });
-    }
-}
-
-const exampleCarousel = new Carousel(fotoContainer, fotoItems, fotoControls);
-
-exampleCarousel.setControls();
-exampleCarousel.useControls();
+      });
