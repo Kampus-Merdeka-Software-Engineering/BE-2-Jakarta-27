@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/pilpres.css">
   <link rel="stylesheet" href="css/nav-end.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-  <title>Profil Capres & CAwapres</title>
+  <title>Profil Capres & Cawapres</title>
 
-<!-- Fav icons -->
-<script src="https://kit.fontawesome.com/46b7ceee20.js" crossorigin="anonymous"></script>
+
 <!-- Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,157 +50,117 @@
   <!-- START CONTENT BODY -->
 <!-- start judul -->
 <div class="container2">
-  <h1><span>Kini</span> Kenali</h1>
-  <p>Mengenal lebih lanjut siapa Calon Presiden dan Wakil Presiden 2024 kini</p>
-  <p>lebih mudah. Kami menyediakan informasi lengkap masing-masing </p> 
-  <p>pasangan calon secara mendalam.</p>
+  <h1><span>Kini</span>Kenali</h1>
+  <p>Mengenal lebih lanjut siapa Calon Presiden dan Wakil Presiden 2024 kini lebih mudah. Kami menyediakan informasi lengkap masing-masing pasangan calon secara mendalam.</p>
 </div>
+<br>
+<br>
 <!-- end judul -->
 
 <!-- Start animation Profil -->
-<div class="container">
-  <div class="foto-container">
-    <img class="foto-item foto-item-1" src="img/prabowo1.jpeg" data-index="1">
-    <img class="foto-item foto-item-2" src="img/prabowo2.jpeg" data-index="2">
-    <img class="foto-item foto-item-3" src="img/prabowo3.jpeg" data-index="3">
-    <img class="foto-item foto-item-4" src="img/prabowo4.jpeg" data-index="4">
-    <img class="foto-item foto-item-5" src="img/prabowo5.jpeg" data-index="5">
+<div id="slider-container-1" class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="img/Anies1.jpg" alt="Image 1"></div>
+    <div class="swiper-slide"><img src="img/muhaimin1.jpg" alt="Image 2"></div>
+    <div class="swiper-slide"><img src="img/prabowo1.jpg"alt="Image 3"></div>
+    <div class="swiper-slide"><img src="img/gibran1.jpg" alt="Image 4"></div>
+    <div class="swiper-slide"><img src="img/Ganjar7.jpg" alt="Image 5"></div>
+    <div class="swiper-slide"><img src="img/MahfudMD1.jpg" alt="Image 6"></div>
   </div>
-  <div class="foto-controls"></div>
+  <div class="swiper-pagination"></div>
+  <!-- desc -->
+
 </div>
-<script src="js/pilpres.js"></Script>
+
 <!-- end animation Profil -->
 
 <!-- Start Resume -->
 <div class="wrapper">
-  <div class="faq">
-    <button class="accordion">
-      Biodata
-      <i class="fa-solid fa-chevron-down"></i>
-    </button>
-    <div class="panel">
-      <h6><strong>Letnan Jenderal (Letjen) TNI (Purn) Prabowo Subianto</strong></h6>
-      <p>
-        Letnan Jenderal (Letjen) TNI (Purn) Prabowo Subianto dilantik sebagai Menteri Pertahanan (Menhan) oleh Presiden Republik Indonesia Ir. Joko Widodo pada tanggal 23 Oktober 2019 dalam Kabinet Indonesia Maju Masa Jabatan 2019-2024.
-      </p>
-        <br>
-      <p>
-          Letjen TNI (Purn) Prabowo Subianto adalah anak dari pasangan Soemitro Djojohadikusumo dan Dora Marie Sigar. Beliau merupakan anak ketiga dari empat bersaudara. Kedua kakaknya perempuan; Biantiningsih Miderawati dan Maryani Ekowati, dan satu adik laki-laki, Hashim Djojohadikusumo.
-      </p>
-        <br>
-        <br>
-      <h6><strong>I. DATA PRIBADI</strong></h6>
-      <p>- Nama Lengkap 	: 	Letnan Jenderal TNI (Purn) Prabowo Subianto</p>
-      <p>- Tempat / Tanggal Lahir 	: 	Jakarta, 17 Oktober 1951</p>
-      <p>- Kewarganegaraan 	: 	Indonesia</p>
-      <p>- Bahasa 	: 	Inggris, Indonesia</p>
-        <br>
-        <br>
-      <h6><strong>II. DATA PENDIDIKAN</strong></h6>
-      <p>- Elementary School (Hongkong)</p>
-      <p>- Victoria Institution (Malaysia)</p>
-      <p>- International School (Swiss)</p>
-      <p>- American School In London, United Kingdom</p>
-      <p>- AKABRI Magelang</p>
-      <br>
-      <br>
-      <h6><strong>III. PENGALAMAN PROFESIONAL</strong></h6>
-      <p>- Basic course of infantry subdivisions (1974)</p>
-      <p>- Commando Course (1975)</p>
-      <p>- Jump Master (1977)</p>
-      <p>- Investigation officer course (1977)</p>
-      <p>- Free Fall (1981)</p>
-      <p>- Counter Terorist Course, GSG-9 Germany (1981)</p>
-      <p>- Special Forces Officer Course, Ft. Benning USA (1981)</p>
+    <div class="accordion-container" id="accordion-container-1">
+      <details class="accordion">
+        <summary class="accordion-header">Biodata</summary>
+        <div class="accordion-content">
+          <p class="slide-description" data-slide-index="0">This is the description for Image 1.</p>
+          <p class="slide-description" data-slide-index="1">This is the description for Image 2.</p>
+          <p class="slide-description" data-slide-index="2">Pria kelahiran Jakarta, 17 Oktober 1951 ini adalah anak dari pasangan  Soemitro Djojohadikusumo dan Dora Marie Sigar. Ia anak ketiga dari empat bersaudara. Kedua kakaknya perempuan; Biantiningsih Miderawati dan Maryani Ekowati, dan satu adik laki-laki, Hashim Djojohadikusumo. Prabowo menikah dengan Siti Hediati Hariyadi, anak dari Presiden Soeharto. Dari pernikahannya dikaruniai satu orang anak bernama Ragowo Didiet Hediprasetyo. Sejak kecil Prabowo tinggal berpindah-pindah tempat di luar negeri karena mengikuti tugas orang tuanya. Dari satu negeri ke negeri lain. Begitu juga dengan pendidikan dasar hingga menengahnya selalu berganti-ganti. Ia sekolah SD di Hongkong, pindah ke Malaysia, Swiss, dan  dia menamatkan sekolah menengah atasnya di American School di Inggris.</p>
+          <p class="slide-description" data-slide-index="3">This is the description for Image 3.</p>
+          <p class="slide-description" data-slide-index="4">This is the description for Image 4.</p>
+          <p class="slide-description" data-slide-index="5">This is the description for Image 5.</p>
+          <p class="slide-description" data-slide-index="6">This is the description for Image 6.</p>
+        </div>
+      </details>
     </div>
-  </div>
 
-  <div class="faq">
-    <button class="accordion">
-      Kilas Balik
-      <i class="fa-solid fa-chevron-down"></i>
-    </button>
-    <div class="panel">
-      <p>
-        <strong>Letnan Jenderal TNI (Purn.) H. Prabowo Subianto Djojohadikusumo</strong> adalah seorang politisi, pengusaha, dan perwira tinggi militer Indonesia.  Ia menempuh pendidikan dan jenjang karier militer selama 28 tahun sebelum berkecimpung dalam dunia bisnis, politik dan pemerintahan. Masa kecil Prabowo sebagai putra ekonom Soemitro Djojohadikoesoemo banyak dilewatkan di luar negeri bersama orang tuanya. Karena pengalaman ini, Prabowo fasih berbahasa Indonesia, Prancis, Jerman, Inggris, dan bahasa Belanda. Minatnya pada dunia militer dipengaruhi oleh pamannya, Soebianto Djojohadikusumo yang gugur dalam Pertempuran Lengkong. Setelah lulus dari AKABRI Darat di Magelang pada tahun 1974 sebagai seorang letnan dua, ia menjadi salah satu komandan operasi termuda dalam sejarah Angkatan Darat saat memimpin operasi Tim Nanggala di Timor Timur.
-      </p>
-
-      <br>
-
-      <p>
-          Kariernya melejit setelah menjabat sebagai Wakil Komandan Detasemen Penanggulangan Teror di Komando Pasukan Khusus pada tahun 1983. Pada tahun 1996, Prabowo diangkat sebagai sebagai Komandan Jenderal pada korps tersebut. Saat menjabat, ia memimpin operasi pembebasan sandera di Mapenduma. Ketika jatuhnya Presiden Soeharto, ayah mertuanya, pada bulan Mei 1998, Prabowo sedang menjabat sebagai Panglima Komando Cadangan Strategis. Setelah diberhentikan dari dinas militer, Prabowo menghabiskan waktu di Yordania dan di beberapa negara Eropa. Sekembalinya ke Indonesia, ia menekuni dunia bisnis, mengikuti jejak adiknya Hashim Djojohadikusumo yang merupakan seorang konglomerat. Bisnis Prabowo meliputi sedikitnya 27 perusahaan yang bergerak pada sektor-sektor yang berbeda. Pada tahun 2008, ia mendirikan Partai Gerakan Indonesia Raya (Gerindra). Selain itu, ia juga pernah aktif sebagai ketua di Himpunan Kerukunan Tani Indonesia. Di bidang olahraga, Prabowo aktif di Ikatan Pencak Silat Indonesia dan Persekutuan Pencak Silat Antarabangsa.
-      </p>
+    <div class="accordion-container" id="accordion-container-2">
+      <details class="accordion">
+        <summary class="accordion-header">Kilas Balik</summary>
+        <div class="accordion-content">
+          <p class="slide-description" data-slide-index="0"><strong>Letnan Jenderal TNI (Purn.) H. Prabowo Subianto Djojohadikusumo</strong> adalah seorang politisi, pengusaha, dan perwira tinggi militer Indonesia.  Ia menempuh pendidikan dan jenjang karier militer selama 28 tahun sebelum berkecimpung dalam dunia bisnis, politik dan pemerintahan. Masa kecil Prabowo sebagai putra ekonom Soemitro Djojohadikoesoemo banyak dilewatkan di luar negeri bersama orang tuanya. Karena pengalaman ini, Prabowo fasih berbahasa Indonesia, Prancis, Jerman, Inggris, dan bahasa Belanda. Minatnya pada dunia militer dipengaruhi oleh pamannya, Soebianto Djojohadikusumo yang gugur dalam Pertempuran Lengkong. Setelah lulus dari AKABRI Darat di Magelang pada tahun 1974 sebagai seorang letnan dua, ia menjadi salah satu komandan operasi termuda dalam sejarah Angkatan Darat saat memimpin operasi Tim Nanggala di Timor Timur.<br>Kariernya melejit setelah menjabat sebagai Wakil Komandan Detasemen Penanggulangan Teror di Komando Pasukan Khusus pada tahun 1983. Pada tahun 1996, Prabowo diangkat sebagai sebagai Komandan Jenderal pada korps tersebut. Saat menjabat, ia memimpin operasi pembebasan sandera di Mapenduma. Ketika jatuhnya Presiden Soeharto, ayah mertuanya, pada bulan Mei 1998, Prabowo sedang menjabat sebagai Panglima Komando Cadangan Strategis. Setelah diberhentikan dari dinas militer, Prabowo menghabiskan waktu di Yordania dan di beberapa negara Eropa. Sekembalinya ke Indonesia, ia menekuni dunia bisnis, mengikuti jejak adiknya Hashim Djojohadikusumo yang merupakan seorang konglomerat. Bisnis Prabowo meliputi sedikitnya 27 perusahaan yang bergerak pada sektor-sektor yang berbeda. Pada tahun 2008, ia mendirikan Partai Gerakan Indonesia Raya (Gerindra). Selain itu, ia juga pernah aktif sebagai ketua di Himpunan Kerukunan Tani Indonesia. Di bidang olahraga, Prabowo aktif di Ikatan Pencak Silat Indonesia dan Persekutuan Pencak Silat Antarabangsa.
+          </p>
+          <p class="slide-description" data-slide-index="1">This is the description for Image 2.</p>
+          <p class="slide-description" data-slide-index="2">This is the description for Image 3.</p>
+        </div>
+      </details>
     </div>
-  </div>
-  
-  <div class="faq">
-    <button class="accordion">
-      Rekam Jejak
-      <i class="fa-solid fa-chevron-down"></i>
-    </button>
-    <div class="panel">
-      <p>
-        Prabowo Subianto, Letnan Jenderal TNI (Purn) mengawali karier sebagai anggota militer, dia menjadi pengusaha setelah pensiun menjadi abdi negara.
-      </p>
-      <br>
-      <h6><strong>Berikut rekam jejak Prabowo Subianto:</strong></h6>
-      <h6><strong>1. Militer</strong></h6>
-      <p>
-        Prabowo menempuh pendidikan Akabri Darat Magelang pada 1970-1974. Pada 1974-1985, dia bertugas di Kopassandha, dahulu merupakan pasukan Khusus TNI AD. Saat masih berusia 26 tahun, Prabowo mengemban tugas penting. Dia menjadi Komandan Peleton Operasi Seroja, dengan tugas memimpin isi penangkapan Nicolau dos Reis Lobato. Pada 1995, dia diangkat menjadi Komandan Jenderal Kopassus. Salah satu tugas yang diemban adalah melaksanakan operasi pembebasan sandera Mapenduma dari tangan OPM. Dia pernah menjadi Komandan Jenderal Komando Pasukan Khusus (!996-1998). Pada 1998, dia didapuk menjadi Panglima Komando Cadangan Strategi TNI Angkatan Darat. Selanjutnya, dia menjadi Komandan Sekolah Staf dan Komando ABRI pada 1998. Walakin, kariernya di militer menjadi sorotan saat Prabowo disebut-sebut ada di balik hilangnya aktivis 1998 oleh Tim Mawar bentukan Kopassus.
-      </p>
-      <h6><strong>Menteri Pertahanan</strong></h6>
-      <p>
-        Kendati gagal berulang kali di pemilihan presiden, dia menerima saat lawannya di pemilihan presiden, yakni Presiden Joko Widodo atau Jokowi menawarinya untuk menjadi Menteri Pertahanan. Dia dilantik menjadi Menteri Pertahanan pada 23 Oktober 2019. Prabowo dipilih menjadi menteri di Kabinet Indonesia Maju 2019-2024.  
-      </p>
-    </div>
-  </div>
 
-  <div class="faq">
-    <button class="accordion">
-      Pencapaian
-      <i class="fa-solid fa-chevron-down"></i>
-    </button>
-    <div class="panel">
-      <p>
-        Letnan Jenderal TNI (Purn.) H. Prabowo Subianto Djojohadikusumo adalah seorang politisi, pengusaha, dan perwira tinggi militer Indonesia.
-      </p>
+    <div class="accordion-container" id="accordion-container-3">
+      <details class="accordion">
+        <summary class="accordion-header">Rekam Jejak & Pencapaian</summary>
+        <div class="accordion-content">
+          <p class="slide-description" data-slide-index="0">
+          <strong>Karier</strong><br>
+          Komandan Peleton Para Komando Group-1 Kopassandha (1976)<br>
+          Komandan  Kompi Para Komando Group-1 Kopassandha (1977)<br>
+          Wakil Komandan Detasemen-81 Kopassus (1983-1985)<br>
+          Wakil Komandan Batalyon Infanteri Lintas Udara 328 Kostrad (1985-1987)<br>
+          Komandan Batalyon Infanteri Lintas Udara 328 Kostrad (1987-1991)<br>
+          Kepala Staf Brigade Infanteri Lintas Udara 17/Kujang I/Kostrad (1991-1993)<br>
+          Komandan Group-3/Pusat Pendidikan Pasukan Khusus (1993-1995)<br>
+          Wakil Komandan Komando Pasukan Khusus (1994)<br>
+          Komandan Komando Pasukan Khusus (1995-1996)<br>
+          Komandan Jenderal Komando Pasukan Khusus (1996-1998)<br>
+          Panglima Komando Cadangan Strategi TNI Angkatan Darat (1998)<br>
+          Komandan Sekolah Staf dan Komando ABRI (1998)<br>
+          Pendiri Partai Gerindra, 2008<br>
+          Ketua Umum HKTI Periode 2004-2009<br>
+          Ketua Umum HKTI Periode 2010-2015<br>
+          Ketua Umum Pengurus Besar Ikatan Pencak Silat Indonesia (PB IPSI) Periode 2001-2011<br>
+          Komisari Perusahaan Migas Karazanbasmunai di Kazakhstan<br>
+          Komisaris Utama PT Tidar Kerinci Agung<br>
+          Presiden CEO PT Nusantara Energy<br>
+          Presiden CEO PT Jaladri Nusantara<br>
+          Dewan Penasihat Organisasi Kosgoro<br>
+          Ketua Yayasan Pendidikan Kebangsaan (Universitas Kebangsaan)<br>
+          Pendiri Koperasi Swadesi Indonesia (KSI)<br>  
+          Menteri Pertahanan (2019 - )<br>
+          <strong>Penghargaan</strong><br>
+          Satya Lencana Kesetiaan XVI<br>
+          Satya Lencana Seroja Ulangan-III<br>
+          Satya Lencana Raksaka Dharma<br>
+          Satya Lencana Dwija Sistha<br>
+          Satya Lencana Wira Karya<br>
+          The First Class The Padin Medal Ops Honor dari Pemerintah Kamboja<br>
+          Bintang Yudha Dharma Naraya<br>
+          </p>
+          <p class="slide-description" data-slide-index="1">This is the description for Image 2.</p>
+          <p class="slide-description" data-slide-index="2">This is the description for Image 3.</p>
+        </div>
+      </details>
     </div>
-  </div>
 
-  <div class="faq">
-    <button class="accordion">
-      LHKPN
-      <i class="fa-solid fa-chevron-down"></i>
-    </button>
-    <div class="panel">
-      <p>
-        Letnan Jenderal TNI (Purn.) H. Prabowo Subianto Djojohadikusumo adalah seorang politisi, pengusaha, dan perwira tinggi militer Indonesia.
-      </p>
+    <div class="accordion-container" id="accordion-container-4">
+      <details class="accordion">
+        <summary class="accordion-header">LHKPN</summary>
+        <div class="accordion-content">
+          <a href="#" class="slide-description" data-slide-index="0">nanti diisi link lhkpn</a>
+          <p class="slide-description" data-slide-index="1">This is the description for Image 2.</p>
+          <p class="slide-description" data-slide-index="2">This is the description for Image 3.</p>
+        </div>
+      </details>
     </div>
-  </div>
-
 </div>
-
-<script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for(i = 0; i < acc.length ; i++){
-    acc[i].addEventListener("click", function(){
-      this.classList.toggle("active");
-      this.parentElement.classList.toggle("active");
-
-      var panel = this.nextElementSibling;
-
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-
-</script>
 <!-- End Resume -->
 
   <!-- END CONTENT BODY -->
@@ -227,8 +187,9 @@
     </div>
   </div>
 </footer>
-  <!-- END FOOTER -->
 
-  
+  <!-- END FOOTER -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/pilpres.js"></Script>
 </body>
 </html>
