@@ -4,36 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\about.css">
+    <link rel="stylesheet" href="css/nav-end.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <title>About</title>
 </head>
 <body>
     
-<!-- Header -->
-<div class="container">
-  <div class="logo" >
-    <div class="logo1">Pilpres</div>
-    <div class="logo2">Kini.</div>
+<!-- Start Header -->
+<div class="navcontainer" id="navcontainer">
+  <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+          <img src="img\logo-pilpreskini.png" alt="logo-portal" width="75%">
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div> 
+      <div class="nav-links">
+          <a href="index.php" target="_self">Home</a>
+          <a href="isu.php" target="_self">Isu</a>
+          <a href="pilpres.php" target="_self">Pilpres</a>
+          <a class="navactive" href="about.html" target="_self">About</a>
+          <img src="img\logo-km.png" alt="logo-km" width="12%" style="margin-right: 4px;">
+          <img src="img\logo-revou.png" alt="logo-revou" width="8%">             
+      </div>
   </div>
-  <nav>
-    <ul>
-      <li><a href="index.php">Home</a></li>
-      <li><a href="isu.php">Isu</a></li>
-      <li><a href="pilpres.php">Pilpres</a></l/i>
-      <li><a href="about.html">About</a></li>
-    </ul>
-    <img src="img\km.png" class="km">
-    <img src="img\REVOU.png" class="REVOU">
-  </nav>
 </div>
-<!-- header -->
+<!-- ending Header -->
 
 <!-- Judul -->
-<div class="container2">
+<div class="container">
   <h1>About Pilpres<span>kini.</span></h1>
   <p>
     PilpresKini adalah portal berita yang didedikasikan untuk memberikan Liputan terkini dan analisis mendalam
@@ -47,95 +56,111 @@
 <img class="imgauto" src="img\about.jpeg" width=auto height=auto>
 
 <div class="containercard">
-  <div class="container2">
-    <h1>Tim <span>Kami.</span></h1>
+      <h1>Tim <span>Kami.</span></h1>
+    <div class="card_group">
+      <div class="card">
+        <div class="image-container">
+          <img src="img\Fiqra.png" alt="Profile Photo">
+        </div>
+        <div class="content">
+          <h2 class="profile-name">Fiqratudzakiyah</h2>
+          <p class="job-title">Quality Assurance</p>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-container">
+          <img src="img\Tia.png" alt="Profile Photo">
+        </div>
+        <div class="content">
+          <h2 class="profile-name">Hotlytia M. B. Siregar</h2>
+          <p class="job-title">Quality Assurance</p>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-container">
+          <img src="img\Acha.png" alt="Profile Photo">
+        </div>
+        <div class="content">
+          <h2 class="profile-name">Aji Nashafa Azka A. F.</h2>
+          <p class="job-title">Backend Engineer</p>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-container">
+          <img src="img\Erza.png" alt="Profile Photo">
+        </div>
+        <div class="content">
+          <h2 class="profile-name">Kurniawan Erza Maulana</h2>
+          <p class="job-title">Backend Engineer</p>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-container">
+          <img src="img\Chay.png" alt="Profile Photo">
+        </div>
+        <div class="content">
+          <h2 class="profile-name">Firdha Chaylia Ayu R.</h2>
+          <p class="job-title">Frontend Engineer</p>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-container">
+          <img src="img\Agif.png" alt="Profile Photo">
+        </div>
+        <div class="content">
+          <h2 class="profile-name">Muhammad Zidni A. G.</h2>
+          <p class="job-title">Frontend Engineer</p>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-container">
+          <img src="img\Dani.png" alt="Profile Photo">
+        </div>
+        <div class="content">
+          <h2 class="profile-name">Theodorus Dani D.</h2>
+          <p class="job-title">Project Leader</p>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
   </div>
-  <div class="card_group">
-    <div class="card">
-      <div class="image-container">
-        <img src="img\Fiqra.png" alt="Profile Photo">
-      </div>
-      <div class="content">
-        <h2 class="profile-name">Fiqra</h2>
-        <p class="job-title">Quality Assurance</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image-container">
-        <img src="img\Tia.png" alt="Profile Photo">
-      </div>
-      <div class="content">
-        <h2 class="profile-name">Tia</h2>
-        <p class="job-title">Quality Assurance</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image-container">
-        <img src="img\Acha.png" alt="Profile Photo">
-      </div>
-      <div class="content">
-        <h2 class="profile-name">Acha</h2>
-        <p class="job-title">Backend Engineer</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image-container">
-        <img src="img\Erza.png" alt="Profile Photo">
-      </div>
-      <div class="content">
-        <h2 class="profile-name">Erza</h2>
-        <p class="job-title">Backend Engineer</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image-container">
-        <img src="img\Chay.png" alt="Profile Photo">
-      </div>
-      <div class="content">
-        <h2 class="profile-name">Chay</h2>
-        <p class="job-title">Frontend Engineer</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image-container">
-        <img src="img\Agif.png" alt="Profile Photo">
-      </div>
-      <div class="content">
-        <h2 class="profile-name">Agif</h2>
-        <p class="job-title">Frontend Engineer</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image-container">
-        <img src="img\Dani.png" alt="Profile Photo">
-      </div>
-      <div class="content">
-        <h2 class="profile-name">Dani</h2>
-        <p class="job-title">Project Leader</p>
-      </div>
-    </div>
 </div>
 <!-- konten -->
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="footercontainer">
-    <div class="footer-content">
-      <img src="img\logo-pilpreskini.png" alt="logo-portal" width="120">
-      <p style="text-align: start">PilpresKini is a news portal will provide up-to-date coverage of the
-        indonesian  presidential  election, as well as in-depth analysis for each candidate</p>
-    </div>
-    <div class="footer-bottom">
-        <div class="footer-social">
-          <ul class="social-icons">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-        <p style="text-align: end">copyright © 2023 PilpresKini</p>
+  <!-- START FOOTER -->
+  <footer class="footer">
+    <div class="footercontainer">
+      <div class="footer-content">
+        <img src="img\logo-pilpreskini.png" alt="logo-portal" width="120">
+        <p style="text-align: start">PilpresKini is a news portal will provide up-to-date coverage of the
+          indonesian  presidential  election, as well as in-depth analysis for each candidate</p>
+      </div>
+      <div class="footer-bottom">
+          <div class="footer-social">
+            <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <p style="text-align: end">copyright © 2023 PilpresKini</p>
+      </div>
     </div>
   </div>
 </footer>
+
+  <!-- END FOOTER -->
 </body>
 </html>
