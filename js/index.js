@@ -1,28 +1,26 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+const express = require('express')
+const userRouter = require('./router/users')
+const app = express()
+const port = 3000
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+app.use(express.json()) // for parsing application/json
+app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+app.get('/', (req, res) => {
+    const kelas = {
+        id: 1,
+        nama: "JavaScript"
+    }
+    // console.log("Hello World")
+    res.json(kelas)
+})
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+app.get('/about', (req, res) => {
+    res.redirect('http://expressjs.com/en/guide/routing.html')
+})
+
+app.use(userRouter)
+
+app.listen(port, () => {
+    console.log('Server runs well')
+})
