@@ -9,7 +9,7 @@ async function getNews() {
   try {
     // Use the 'news' model directly to perform queries
     const results = await news.findAll({
-      attributes: ['title_isu', 'upload_date', 'gambar_isu', 'isu'],
+      attributes: ['id_berita', 'title_isu', 'upload_date', 'gambar_isu', 'isu', 'id_paslon'],
     });
 
     return results;
