@@ -5,6 +5,7 @@ var cors = require('cors')
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 // Endpoint for submitting votes
 app.post('/submit-vote', async (req, res) => {
@@ -43,7 +44,7 @@ async function getNews() {
     return [];
   }
 }
-app.use(cors())
+
 app.get('/news', async (req, res) => {
   const newsData = await getNews();
   res.json(newsData);
