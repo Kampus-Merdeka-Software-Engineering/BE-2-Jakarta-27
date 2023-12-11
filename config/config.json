@@ -15,11 +15,11 @@
     "dialect": "mysql"
   },  
   "production": {
-    "username": "test_mountainof",
-    "password": "f377d715c4e97419b4c4f0a34d2e8bab687f53d8",
-    "database": "test_mountainof",
-    "host": "vrb.h.filess.io",
+    "username": "root",
+    "password": "e56dCc24acEHCh562bH3dbD34H63fhCB",
+    "database": "railway",
+    "host": "viaduct.proxy.rlwy.net",
     "dialect": "mysql",
-    "port":"3307"
+    "port":"55202"
   }
 }
