@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const { sequelize, news } = require('./db'); // Import the 'news' model from db.js
+const { sequelize, news, voting } = require('./db'); // Import the 'news' model from db.js
 var cors = require('cors')
 
 const app = express();
+app.use(express.json());
 
 async function getNews() {
   try {
@@ -43,6 +44,29 @@ app.get('/news/:id_berita', async (req, res) => {
   } catch (error) {
     console.error('Error retrieving news by id:', error);
     res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+// Define a route to handle voting
+app.post('/voting/vote', async (req, res) => {
+  try {
+    const { choice } = req.body;
+    const ipAddress = req.ip; // Get the IP address of the voter
+
+    // Check if the voter with the same IP address has already voted
+    const existingVote = await voting.findOne({ where: { ipAddress } });
+
+    if (existingVote) {
+      return res.status(400).json({ error: 'You have already voted.' });
+    }
+
+    // Record the vote in the database
+    const newVote = await voting.create({ choice, ipAddress });
+
+    return res.json({ message: 'Vote submitted successfully.', vote: newVote });
+  } catch (error) {
+    console.error('Error submitting vote:', error);
+    return res.status(500).json({ error: 'Internal server error' });
   }
 });
 

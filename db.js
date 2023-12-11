@@ -13,7 +13,25 @@ const news = sequelize.define('berita', {
   id_paslon: { type: Sequelize.DataTypes.INTEGER, allowNull: false },
 });
 
+const voting = sequelize.define('voting', {
+  id: {
+    type: Sequelize.DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true,
+  },
+  choice: {
+    type: Sequelize.DataTypes.STRING(255),
+    allowNull: false,
+  },
+  ipAddress: {
+    type: Sequelize.DataTypes.STRING(255),
+    allowNull: false,
+  },
+});
+
+
 module.exports = {
   sequelize,
   news,
+  voting,
 };
