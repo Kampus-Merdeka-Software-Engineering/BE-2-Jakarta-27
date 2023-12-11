@@ -2,26 +2,25 @@
 const { sequelize } = require('../db')
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.createTable('voting', {
+    await queryInterface.createTable('Voting', {
       id: {
         type: Sequelize.DataTypes.INTEGER,
-        primaryKey: true,
         autoIncrement: true,
+        primaryKey: true,
       },
-      choice: {
-        type: Sequelize.DataTypes.STRING(255),
+      voterIP: {
+        type: Sequelize.DataTypes.STRING,
         allowNull: false,
       },
-      ipAddress: {
-        type: Sequelize.DataTypes.STRING(255),
+      id_paslon: {
+        type: Sequelize.DataTypes.INTEGER,
         allowNull: false,
       },
-  });
-
+    });
 
 await sequelize.sync();},
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.dropTable('voting');
+    await queryInterface.dropTable('Voting');
   }
 };
