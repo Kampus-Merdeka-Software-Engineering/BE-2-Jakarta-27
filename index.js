@@ -24,6 +24,28 @@ app.get('/news', async (req, res) => {
   res.json(newsData);
 });
 
+app.get('/news/:id_berita', async (req, res) => {
+  const id_berita = req.params.id_berita;
+
+  try {
+    const result = await news.findOne({
+      where: {
+        id_berita: id_berita,
+      },
+      attributes: ['id_berita', 'title_isu', 'upload_date', 'gambar_isu', 'isu', 'id_paslon'],
+    });
+
+    if (result) {
+      res.json(result);
+    } else {
+      res.status(404).json({ error: 'News not found' });
+    }
+  } catch (error) {
+    console.error('Error retrieving news by id:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
 // Start the server
 app.use('/', router);
 const port = 8080;
