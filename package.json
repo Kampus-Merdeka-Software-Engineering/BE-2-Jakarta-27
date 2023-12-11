@@ -1,4 +1,6 @@
-{
+{ "scripts": {
+  "migrate": "sequelize-cli db:migrate"
+},
   "dependencies": {
     "express": "^4.18.2",
     "mysql": "^2.18.1",

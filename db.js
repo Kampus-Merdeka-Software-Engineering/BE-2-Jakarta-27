@@ -1,11 +1,7 @@
 const Sequelize = require('sequelize');
 
 // Create a Sequelize instance with connection details
-const sequelize = new Sequelize('berita_capres', 'root', '', {
-  host: 'localhost',
-  dialect: 'mysql'
-});
-
+const sequelize = new Sequelize('mysql://root@127.0.0.1:8080/berita_capres')
 
 // Define a model for the "berita" table
 const news = sequelize.define('berita', {

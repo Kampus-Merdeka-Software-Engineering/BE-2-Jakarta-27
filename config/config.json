@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "berita_capres",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "port":"3306"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },  
+  "production": {
+    "username": "test_mountainof",
+    "password": "f377d715c4e97419b4c4f0a34d2e8bab687f53d8",
+    "database": "test_mountainof",
+    "host": "vrb.h.filess.io",
+    "dialect": "mysql",
+    "port":"3307"
+  }
+}
