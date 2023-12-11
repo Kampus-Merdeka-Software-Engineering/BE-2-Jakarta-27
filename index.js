@@ -9,26 +9,25 @@ app.use(express.json());
 // Endpoint for submitting votes
 app.post('/submit-vote', async (req, res) => {
   try {
-    const { voterIP, id_paslon } = req.body;
+    // Capture the user's IP address from the request
+    const voterIP = req.ip;
 
-    // Check if the same IP has already voted
-    const existingVote = await Voting.findOne({
-      where: { voterIP },
+    // Extract other data from the request body
+    const { id_paslon } = req.body;
+
+    // Save the vote to the database
+    const vote = await Voting.create({
+      voterIP,
+      id_paslon,
     });
-
-    if (existingVote) {
-      return res.status(400).json({ error: 'You have already voted.' });
-    }
-
-    // Save the vote
-    const vote = await Voting.create({ voterIP, id_paslon });
 
     res.json({ success: true, vote });
   } catch (error) {
     console.error('Error submitting vote:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
+    res.status(500).json({ success: false, error: 'Internal Server Error' });
   }
 });
+
 
 
 async function getNews() {
