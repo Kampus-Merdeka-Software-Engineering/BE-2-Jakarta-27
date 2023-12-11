@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 // Create a Sequelize instance with connection details
-const sequelize = new Sequelize('mysql://root@127.0.0.1:8080/berita_capres')
+const sequelize = new Sequelize('mysql://root@127.0.0.1:3306/berita_capres')
 
 // Define a model for the "berita" table
 const news = sequelize.define('berita', {
