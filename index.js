@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { sequelize, news } = require('./db'); // Import the 'news' model from db.js
+var cors = require('cors')
 
 const app = express();
 
@@ -17,7 +18,7 @@ async function getNews() {
     return [];
   }
 }
-
+app.use(cors())
 app.get('/news', async (req, res) => {
   const newsData = await getNews();
   res.json(newsData);
