@@ -7,11 +7,20 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+const corsOptions = {
+  origin: ['http://192.168.1.8:8081', 'http://127.0.0.1:8081'],
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204,
+};
+
+app.use(cors(corsOptions));
+
 // Endpoint for submitting votes
 app.post('/submit-vote', async (req, res) => {
   try {
     // Capture the user's IP address from the request
-    const voterIP = req.ip;
+    const voterIP = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
 
     // Extract other data from the request body
     const { id_paslon } = req.body;
