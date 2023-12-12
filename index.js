@@ -31,13 +31,19 @@ app.post('/submit-vote', async (req, res) => {
       id_paslon,
     });
 
-    res.json({ success: true, vote });
+     // Fetch voting results
+     const votingResults = await Voting.findAll({
+      attributes: ['id_paslon', [sequelize.fn('COUNT', 'id'), 'voteCount']],
+      group: ['id_paslon'],
+      raw: true,
+    });
+
+    res.json({ success: true, votingResults });
   } catch (error) {
     console.error('Error submitting vote:', error);
     res.status(500).json({ success: false, error: 'Internal Server Error' });
   }
 });
-
 
 
 async function getNews() {
