@@ -7,13 +7,6 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const corsOptions = {
-  origin: ['http://192.168.1.8:8081', 'http://127.0.0.1:8081'],
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
-  optionsSuccessStatus: 204,
-};
-
 app.use(cors(corsOptions));
 
 // Endpoint for submitting votes
